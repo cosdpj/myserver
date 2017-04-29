@@ -6,7 +6,7 @@ var express = require('express'),
 app.use(bodyParser.json({ type: 'application/json' }));
 
 app.get('/list', function (req, res) {
-    res.json({ message: 'hooray! welcome to our api!' });
+    res.json({ message: 'hooray! welcome to our api!', date : new Date () });
 })
 
 app.post('/add', function (req, res) {
